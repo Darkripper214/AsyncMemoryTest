@@ -1,0 +1,20 @@
+{
+  "name": "asyncMemoryCheck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect index.js",
+    "async": "node --inspect async.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.0.5",
+    "cls-hooked": "^4.2.2",
+    "express": "^4.17.1",
+    "uuid": "^3.4.0"
+  }
+}
