@@ -3,10 +3,13 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 let createNamespace = require('cls-hooked').createNamespace;
 let session = createNamespace('benchmark');
+// Using async will increase the _context map, but it will be removed from time to time
+async function t1() {}
 
 app.use((req, res, next) => {
   session.run(() => {
     session.set('user', uuidv4());
+    t1();
     next();
   });
 });

@@ -2,11 +2,12 @@
   "name": "asyncMemoryCheck",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "ass2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --inspect index.js",
-    "async": "node --inspect async.js"
+    "async": "node --inspect async.js",
+    "gc": "node --inspect --expose-gc --max-old-space-size=100 cls-gc.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "autocannon": "^7.0.5",
     "cls-hooked": "^4.2.2",
     "express": "^4.17.1",
+    "express-http-context": "^1.2.4",
     "uuid": "^3.4.0"
   }
 }
