@@ -4,6 +4,9 @@
 
 The repository is a miniature test to see how is memory utilized when using `cls-hooked` and `async-hook` to pass context within `Node.js`.
 
+Attempt to answer the following question
+https://stackoverflow.com/questions/66665783/memory-leak-in-cls-hooked-or-wrong-use/66678380#66678380
+
 ## Usage
 
 1) `npm run start` for CLS-hooked server **or** `npm run async` for Async-hook server
